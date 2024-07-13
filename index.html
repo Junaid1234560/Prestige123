@@ -33,7 +33,7 @@
             height: 150px;
             border-radius: 50%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+            margin-bottom: -50px; /* Adjusted margin */
         }
 
         .about-text {
@@ -80,6 +80,30 @@
         .features {
             padding-top: 60px; /* Adjust this value as needed */
         }
+
+        /* Footer */
+        .social-icons {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .social-icons img {
+            width: 40px; /* Adjust the size of social icons */
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
     </style>
 </head>
 <body>
@@ -154,11 +178,12 @@
             <img src="images/myimg.jpg" alt="Your Image">
         </div>
         <div class="about-text">
-            <h2>Junaid Ansari</h2>
+            <h2>Junaid Ansari<br><p>CIVIL ENGINEER</p></h2>
+            <br>
             <p><img src="images/checkmark.png" alt="Checkmark" width="20">   <b>Experience: </b>  3 years</p>
             <p><img src="images/checkmark.png" alt="Checkmark" width="20">  <b>Interior Design: </b> High quality</p>
             <p><img src="images/checkmark.png" alt="Checkmark" width="20">   <b>Customer Satisfaction: </b> High</p>
-<br>
+        <br>
             <div class="whatsapp-contact">
                 <p><b>CONTACT:</b></p>
                 <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank">
@@ -169,10 +194,20 @@
         </div>
     </section>
 
-    <footer class="contact section-box" id="contact">
+    <footer class="contact" id="contact">
         <br>
         <p>&copy; 2024 PRESTIGE. All rights reserved.</p>
-        <br>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/YOUR_INSTAGRAM_PROFILE" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/YOUR_YOUTUBE_CHANNEL" target="_blank">
+                <img src="images/youtube.png" alt="YouTube">
+            </a>
+            <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_PROFILE" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
     </footer>
 </body>
 </html>
