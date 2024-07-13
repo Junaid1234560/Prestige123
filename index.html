@@ -9,6 +9,77 @@
         html {
             scroll-behavior: smooth;
         }
+
+        /* Section Box */
+        .section-box {
+            border: 2px solid #ccc;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 800px; /* Set a max-width for centering */
+        }
+
+        /* About Section */
+        .about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .about-img img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .about-text {
+            text-align: center;
+        }
+
+        .about-text p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-text p img {
+            margin-left: 10px;
+        }
+
+        /* WhatsApp Icon */
+        .whatsapp-contact {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .whatsapp-contact img {
+            width: 60px;
+            height: 57px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-contact img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Our Services Heading */
+        .services-heading {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        /* Features Section */
+        .features {
+            padding-top: 60px; /* Adjust this value as needed */
+        }
     </style>
 </head>
 <body>
@@ -19,17 +90,17 @@
             </a>
             <ul class="menu">
                 <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#work">Work</a></li>  
+                <li><a href="#work">Services</a></li>  
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="main-heading" id="home">
-        <img src="images/NAME8.png" alt="Logo" class="name-img"/>
-            
+            <img src="images/NAME8.png" alt="Logo" class="name-img"/>
         </div>
     </header>
 
     <section class="features" id="work">
+        <div class="services-heading"><br>SERVICES WE PROVIDE</div>
         <div class="feature-container">
             <div class="feature-box">
                 <div class="f-img">
@@ -73,10 +144,35 @@
         </div>
     </section>
 
-    <footer class="contact" id="contact">
+    <div class="why-choose-us section-box">
+        <h2>Why Choose Us?</h2>
+        <p>We are committed to delivering top-notch services that exceed our clients' expectations. Our team of experts is dedicated to providing innovative solutions tailored to your needs. With our extensive experience and proven track record, we ensure the highest level of satisfaction and success for our clients. Choose us for our unwavering commitment to quality, excellence, and customer-centric approach.</p>
+    </div>
+
+    <section class="about section-box">
+        <div class="about-img">
+            <img src="images/myimg.jpg" alt="Your Image">
+        </div>
+        <div class="about-text">
+            <h2>Junaid Ansari</h2>
+            <p><img src="images/checkmark.png" alt="Checkmark" width="20">   <b>Experience: </b>  3 years</p>
+            <p><img src="images/checkmark.png" alt="Checkmark" width="20">  <b>Interior Design: </b> High quality</p>
+            <p><img src="images/checkmark.png" alt="Checkmark" width="20">   <b>Customer Satisfaction: </b> High</p>
+<br>
+            <div class="whatsapp-contact">
+                <p><b>CONTACT:</b></p>
+                <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank">
+                    <img src="images/WHAT.png" alt="WhatsApp">
+                </a>
+                <p>Click the above icon to directly chat with us</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="contact section-box" id="contact">
         <br>
         <p>&copy; 2024 PRESTIGE. All rights reserved.</p>
-        </br>
+        <br>
     </footer>
 </body>
 </html>
